@@ -1,0 +1,6 @@
+{
+  "name": "Flash Calculation",
+  "description": "Matrix-style mental arithmetic flash calculation trainer with purple cyber aesthetics, customizable digits (1-6), cases (5-50), addition and subtraction, and adjustable flash intervals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'JetBrains Mono', 'Share Tech Mono', monospace;
+  }
+}
+
+.font-cyber {
+  font-family: 'Share Tech Mono', 'JetBrains Mono', monospace;
+}
+
+.font-display-cyber {
+  font-family: 'Chakra Petch', 'JetBrains Mono', monospace;
+}
+
+/* Purple Matrix Glow Utilities */
+.glow-purple-sm {
+  text-shadow: 0 0 6px rgba(192, 132, 252, 0.6), 0 0 12px rgba(168, 85, 247, 0.4);
+}
+
+.glow-purple-md {
+  text-shadow: 0 0 10px rgba(192, 132, 252, 0.8), 0 0 20px rgba(168, 85, 247, 0.6), 0 0 35px rgba(147, 51, 234, 0.4);
+}
+
+.glow-purple-lg {
+  text-shadow: 0 0 15px rgba(232, 121, 249, 0.9), 0 0 30px rgba(192, 132, 252, 0.8), 0 0 60px rgba(168, 85, 247, 0.6);
+}
+
+.box-glow-purple {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.25), inset 0 0 15px rgba(168, 85, 247, 0.1);
+}
+
+.box-glow-purple-active {
+  box-shadow: 0 0 25px rgba(192, 132, 252, 0.45), inset 0 0 20px rgba(168, 85, 247, 0.2);
+}
+
+/* Subtle CRT scanline effect */
+.crt-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 26, 0) 50%, 
+    rgba(0, 0, 0, 0.35) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 255, 0.02),
+    rgba(0, 255, 255, 0.01),
+    rgba(168, 85, 247, 0.02)
+  );
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Custom scrollbar for cyber terminal */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090314;
+}
+::-webkit-scrollbar-thumb {
+  background: #581c87;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7e22ce;
+}
